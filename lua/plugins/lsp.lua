@@ -52,5 +52,8 @@ return {
 				lspconfig[server].setup(config)
 			end
 		end,
+		keys = {
+			{ "<leader>d", function() vim.diagnostic.open_float() end, desc = "Show diagnostics in floating window" },
+		}
 	},
 }
